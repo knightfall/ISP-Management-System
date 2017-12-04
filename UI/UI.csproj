@@ -1,0 +1,196 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9EB59F7F-D3C0-41BF-9173-2B359425ECE6}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>UI</RootNamespace>
+    <AssemblyName>UI</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Settings.cs" />
+    <Compile Include="ViewForms\Add Complaint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewForms\Add Complaint.Designer.cs">
+      <DependentUpon>Add Complaint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewForms\AddUser_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewForms\AddUser_Form.Designer.cs">
+      <DependentUpon>AddUser_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewForms\Billsmr.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewForms\Billsmr.Designer.cs">
+      <DependentUpon>Billsmr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewForms\complaintsmr.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewForms\complaintsmr.Designer.cs">
+      <DependentUpon>complaintsmr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewForms\Main Window.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewForms\Main Window.Designer.cs">
+      <DependentUpon>Main Window.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewForms\Menubox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewForms\Menubox.Designer.cs">
+      <DependentUpon>Menubox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewForms\New Bill.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewForms\New Bill.Designer.cs">
+      <DependentUpon>New Bill.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewForms\searchremovemodify.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewForms\searchremovemodify.Designer.cs">
+      <DependentUpon>searchremovemodify.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="ViewForms\Add Complaint.resx">
+      <DependentUpon>Add Complaint.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewForms\AddUser_Form.resx">
+      <DependentUpon>AddUser_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewForms\Billsmr.resx">
+      <DependentUpon>Billsmr.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewForms\complaintsmr.resx">
+      <DependentUpon>complaintsmr.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewForms\Main Window.resx">
+      <DependentUpon>Main Window.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewForms\Menubox.resx">
+      <DependentUpon>Menubox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewForms\New Bill.resx">
+      <DependentUpon>New Bill.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewForms\searchremovemodify.resx">
+      <DependentUpon>searchremovemodify.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\DataSources\Data_Layer.Activity_Layer.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Data Layer\Data Layer.csproj">
+      <Project>{c3cc2a8d-2462-46f5-9415-c1568998b6fd}</Project>
+      <Name>Data Layer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Entity Layer\Entity Layer.csproj">
+      <Project>{c33cc6c0-cc18-4ef0-bdab-3bec94d52790}</Project>
+      <Name>Entity Layer</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add-user %282%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\remove.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1407728923_user_info.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1407728974_user_unstarred.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1407729158_48764.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1408062297_175527.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1408063035_174654.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1408063780_175177.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
